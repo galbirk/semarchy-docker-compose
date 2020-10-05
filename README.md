@@ -35,8 +35,8 @@ git clone https://github.com/galbirk/semarchy-docker-compose.git
 cd semarchy-docker-compose
 docker-compose up # run docker-compose up -d for background running.
 ```
-semarchy url: http://[ip/hostname]
-pgadmin url: http://[ip/hostname]:8080
+semarchy url: http://[ip/hostname]<br>
+pgadmin url: http://[ip/hostname]:8080<br>
 **semarchy default credentials:**<br>
 username: admin<br>
 password: Aa123456<br>
