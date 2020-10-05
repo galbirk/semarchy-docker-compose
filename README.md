@@ -1,3 +1,5 @@
+![docker-compose CI](https://github.com/galbirk/semarchy-docker-compose/workflows/docker-compose%20CI/badge.svg)
+
 # semarchy-docker-compose
 Deploy Semarchy xDM with docker-compose, including the Dockerfiles.<br>
 Compose uses postgresql as Database.<br>
