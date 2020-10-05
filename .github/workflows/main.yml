@@ -25,8 +25,42 @@ jobs:
       - name: Run docke-compose
         run: docker-compose up -d
         
-      - name: Check containers.
+      - name: Check containers
         run: |
           docker ps | grep -E '.*semarchy-docker-compose_web.*Up'
           docker ps | grep -E '.*semarchy-docker-compose_web.*Up'
           docker ps | grep -E '.*pgadmin4.*Up'
+          
+      - name: Build and push semarchy image
+        uses: docker/build-push-action@v1.1.1
+        with:
+          # Username used to log in to a Docker registry. If not set then no login will occur
+          username: galbirk
+          # Password or personal access token used to log in to a Docker registry. If not set then no login will occur
+          password: ${{ secrets.DOCKER_HUB_PASS }}
+          # Docker repository to tag the image with
+          repository: semarchy
+          # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
+          tags: postgres
+          # Path to the build context
+          path: /web
+          # Always attempt to pull a newer version of the image
+          always_pull: true
+          push: true
+  
+      - name: Build and push postgres image
+        uses: docker/build-push-action@v1.1.1
+        with:
+          # Username used to log in to a Docker registry. If not set then no login will occur
+          username: galbirk
+          # Password or personal access token used to log in to a Docker registry. If not set then no login will occur
+          password: ${{ secrets.DOCKER_HUB_PASS }}
+          # Docker repository to tag the image with
+          repository: postgres
+          # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
+          tags: 9.6-semarchy
+          # Path to the build context
+          path: /db
+          # Always attempt to pull a newer version of the image
+          always_pull: true
+          push: true
