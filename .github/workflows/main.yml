@@ -26,4 +26,4 @@ jobs:
         run: docker-compose up -d
         
       - name: Check containers.
-        run: curl http://localhost
+        run: docker ps
