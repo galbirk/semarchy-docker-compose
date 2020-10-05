@@ -53,7 +53,7 @@ password: admin<br>
 * **SEMARCHY_DATABASE_PORT** --> DB connection port.
 * **SEMARCHY_LOGIN** --> semarchy default username.
 * **SEMARCHY_PASSWORD** --> semarchy default user password.
-####Default values####
+#### Default values
 ```bash
 SEMARCHY_DATABASE_HOST=db 
 SEMARCHY_DATABASE_PORT=5432 
