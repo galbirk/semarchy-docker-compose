@@ -2,6 +2,8 @@ version: '3'
 services:
   web:
     build: ./web
+    environment:
+      - SEMARCHY_NODE_TYPE=active
     ports:
       - '80:8080'
       - '81:8088'
@@ -20,8 +22,8 @@ services:
     ports: 
       - '8080:80'
     environment:
-      - PGADMIN_DEFAULT_EMAIL="admin@admin.com"
-      - PGADMIN_DEFAULT_PASSWORD="admin"
+      PGADMIN_DEFAULT_EMAIL: "admin@admin.com"
+      PGADMIN_DEFAULT_PASSWORD: "admin"
     depends_on:
       - db
 
