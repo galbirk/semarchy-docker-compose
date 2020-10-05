@@ -3,6 +3,14 @@ Deploy Semarchy xDM with docker-compose, including the Dockerfiles.<br>
 Compose uses postgresql as Database.<br>
 Added pgadmin container for psql web managment.
 
+## Table of Contents
+- [Run Example](#Run-Example)
+  * [General Parameters](#General-Parameters)
+  * [Install docker and docker-compose](#Install-docker-and-docker-compose)
+  * [Clone git repository and deploy the compose file](#Clone-git-repository-and-deploy-the-compose-file)
+- [Environment Variables](#Environment-Variables)
+- [Author Information](#Author-Information)
+
 # Run Example
 ## Install docker and docker-compose
 [docker installation documentation](https://docs.docker.com/get-docker/)<br>
@@ -47,3 +55,9 @@ password: admin<br>
 ### Pgadmin env vars.
 * **PGADMIN_DEFAULT_EMAIL** --> pgadmin default mail
 * **PGADMIN_DEFAULT_PASSWORD** --> pgadmin default password
+
+# Author Information
+
+<b>Gal Birkman, DevOps Engineer.</b><br>
+<b>email:</b> galbirkman@gmail.com<br>
+<b>GitHub:</b> https://github.com/galbirk
