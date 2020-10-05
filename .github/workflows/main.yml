@@ -43,7 +43,7 @@ jobs:
           # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
           tags: postgres
           # Path to the build context
-          path: /web
+          path: ./web
           # Always attempt to pull a newer version of the image
           always_pull: true
           push: true
@@ -60,7 +60,7 @@ jobs:
           # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
           tags: 9.6-semarchy
           # Path to the build context
-          path: /db
+          path: ./db
           # Always attempt to pull a newer version of the image
           always_pull: true
           push: true
