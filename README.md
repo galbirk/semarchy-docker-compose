@@ -57,7 +57,7 @@ password: admin<br>
 * **PGADMIN_DEFAULT_EMAIL** --> pgadmin default mail
 * **PGADMIN_DEFAULT_PASSWORD** --> pgadmin default password
 
-## Docker Hun Images
+## Docker Hub Images
 #### The images are published in Docker Hub:
 * [Semarchy image repository](https://hub.docker.com/repository/docker/galbirk/semarchy)
 * [postgres for semarchy image repository](https://hub.docker.com/repository/docker/galbirk/postgres)
