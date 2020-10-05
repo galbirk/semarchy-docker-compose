@@ -22,7 +22,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Run docke-compose
+      - name: Run docker-compose
         run: docker-compose up -d
         
       - name: Check containers
@@ -39,7 +39,7 @@ jobs:
           # Password or personal access token used to log in to a Docker registry. If not set then no login will occur
           password: ${{ secrets.DOCKER_HUB_PASS }}
           # Docker repository to tag the image with
-          repository: semarchy
+          repository: galbirk/semarchy
           # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
           tags: postgres
           # Path to the build context
@@ -56,7 +56,7 @@ jobs:
           # Password or personal access token used to log in to a Docker registry. If not set then no login will occur
           password: ${{ secrets.DOCKER_HUB_PASS }}
           # Docker repository to tag the image with
-          repository: postgres
+          repository: galbirk/postgres
           # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
           tags: 9.6-semarchy
           # Path to the build context
