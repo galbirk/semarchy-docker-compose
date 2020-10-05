@@ -5,7 +5,6 @@ Added pgadmin container for psql web managment.
 
 ## Table of Contents
 - [Run Example](#Run-Example)
-  * [General Parameters](#General-Parameters)
   * [Install docker and docker-compose](#Install-docker-and-docker-compose)
   * [Clone git repository and deploy the compose file](#Clone-git-repository-and-deploy-the-compose-file)
 - [Environment Variables](#Environment-Variables)
