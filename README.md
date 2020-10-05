@@ -49,7 +49,17 @@ password: admin<br>
 **credentials can be changed with environment variables in the compose file.**
 ## Environment Variables
 ### Semarchy env vars.
-* **SEMARCHY_NODE_TYPE** --> can be set to active/passive
+* **SEMARCHY_DATABASE_HOST** --> DB hostname
+* **SEMARCHY_DATABASE_PORT** --> DB connection port.
+* **SEMARCHY_LOGIN** --> semarchy default username.
+* **SEMARCHY_PASSWORD** --> semarchy default user password.
+####Default values####
+```bash
+SEMARCHY_DATABASE_HOST=db 
+SEMARCHY_DATABASE_PORT=5432 
+SEMARCHY_LOGIN=admin 
+SEMARCHY_PASSWORD=Aa123456
+```
 ### Postgres env vars.
 * **POSTGRES_USER** --> postgres default user
 * **POSTGRES_PASSWORD** --> postgres default password
