@@ -27,6 +27,6 @@ jobs:
         
       - name: Check containers.
         run: |
-          grep -E '.*semarchy-docker-compose_web.*Up'
-          grep -E '.*semarchy-docker-compose_db.*Up'
-          grep -E '.*semarchy-docker-compose_pgadmin.*Up'
+          docker ps | grep -E '.*semarchy-docker-compose_web.*Up'
+          docker ps | grep -E '.*semarchy-docker-compose_web.*Up'
+          docker ps | grep -E '.*pgadmin4.*Up'
