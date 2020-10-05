@@ -129,16 +129,16 @@ fi
 
 # Depending on the node type (active or passive), we copy (move) a different war file
 # We take advantage of auto deploy : https://tomcat.apache.org/tomcat-9.0-doc/deployer-howto.html#Deployment_on_Tomcat_startup
-if [ "$SEMARCHY_NODE_TYPE" = "active" ]
-then
+#if [ "$SEMARCHY_NODE_TYPE" = "active" ]
+#then
     # active node
-    mv $CATALINA_HOME/webapps/semarchy-active.war $CATALINA_HOME/webapps/semarchy.war
-    rm $CATALINA_HOME/webapps/semarchy-passive.war
-else
+#    mv $CATALINA_HOME/webapps/semarchy-active.war $CATALINA_HOME/webapps/semarchy.war
+#    rm $CATALINA_HOME/webapps/semarchy-passive.war
+#else
     # passive node
-    mv $CATALINA_HOME/webapps/semarchy-passive.war $CATALINA_HOME/webapps/semarchy.war
-    rm $CATALINA_HOME/webapps/semarchy-active.war
-fi
+#    mv $CATALINA_HOME/webapps/semarchy-passive.war $CATALINA_HOME/webapps/semarchy.war
+#    rm $CATALINA_HOME/webapps/semarchy-active.war
+#fi
 
 #####################################
 # TOMCAT LAUNCH
