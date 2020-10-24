@@ -28,7 +28,7 @@ jobs:
       - name: Check containers
         run: |
           docker ps | grep -E '.*semarchy-docker-compose_web.*Up'
-          docker ps | grep -E '.*semarchy-docker-compose_web.*Up'
+          docker ps | grep -E '.*semarchy-docker-compose_db.*Up'
           docker ps | grep -E '.*pgadmin4.*Up'
           
       - name: Build and push semarchy image
