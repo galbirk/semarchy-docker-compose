@@ -8,6 +8,8 @@
 
 FROM tomcat:9.0.38-jdk11-openjdk
 
+LABEL maintainer="Gal Birkman, Devops Engineer. galbirkman@gmail.com"
+
 ARG SEMARCHY_VERSION="5.0"
 
 ARG FILENAME="semarchy-xdm-preconfigured-5.0.4.ga-20190708-1257.zip"
